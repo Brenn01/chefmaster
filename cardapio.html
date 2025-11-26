@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="pt-BR">
+ 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ChefMaster — Cardápio</title>
+  <meta name="description" content="Cardápio completo do restaurante ChefMaster — Shopping Bandeiras, Campinas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap%22
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+ 
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand-logo">
+      <img src="img/CHEF MASTER.png" alt="Logo ChefMaster">
+      <a class="brand" href="#">
+        ChefMaster <span class="brand-sub">Shopping Bandeiras — Campinas</span>
+      </a>
+    </div>
+ 
+    <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navList">☰</button>
+      <ul id="navList" class="nav-list">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="porcao.html">Porções</a></li>
+        <li><a href="bebidas.html">Bebidas</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+ 
+<main>
+  <!-- Cardápio Completo -->
+  <section id="menu" class="section container">
+    <div class="section-header">
+      <h1>Nosso Cardápio</h1>
+      <p>Pratos principais e acompanhamentos para todos os gostos.</p>
+    </div>
+ 
+    <div class="filters">
+      <button class="filter active" data-filter="all">Todos</button>
+      <button class="filter" data-filter="carnes">Carnes</button>
+      <button class="filter" data-filter="peixe">Peixe & Camarão</button>
+      <button class="filter" data-filter="caseiro">Frangos</button>
+    </div>
+ 
+    <div id="menuGrid" class="cards-grid large">
+ 
+      <!-- Feijoada Completa -->
+      <article class="card" data-category="carnes">
+        <img src="https://receitasgourmetdavovo.com.br/wp-content/uploads/2022/05/feijoada-completa.jpg" alt="Feijoada Completa">
+        <div class="card-body">
+          <h3>Feijoada Completa</h3>
+          <p>Feijão preto com carne seca, paio, costelinha e linguiça. Acompanhada de arroz, couve, farofa e laranja.</p>
+          <div class="card-actions">
+            <span class="price">R$ 49,90</span>
+            <button class="btn small"
+              data-dish='{"name":"Feijoada Completa","price":"R$ 49,90","desc":"Feijão preto com carne seca, paio, costelinha e linguiça. Acompanhada de arroz, couve, farofa e laranja."}'>Ver</button>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Costelinha Suína com Macaxeira -->
+      <article class="card" data-category="carnes">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.wOxivQSefKfcKGg6Q-E-aAHaEK" alt="Costelinha Suína com Macaxeira">
+        <div class="card-body">
+          <h3>Costelinha Suína com Macaxeira</h3>
+          <p>Costela frita crocante servida com macaxeira, vinagrete e arroz.</p>
+          <div class="card-actions">
+            <span class="price">R$ 42,90</span>
+            <button class="btn small"
+              data-dish='{"name":"Costelinha Suína com Macaxeira","price":"R$ 42,90","desc":"Costela frita crocante servida com macaxeira, vinagrete e arroz."}'>Ver</button>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Salmão Grelhado -->
+      <article class="card" data-category="peixe">
+        <img src="https://static.itdg.com.br/images/1200-630/d59df3673a8fcd365af0caac830ed377/324510-original.jpg" alt="Salmão Grelhado">
+        <div class="card-body">
+          <h3>Salmão Grelhado</h3>
+          <p>Salmão fresco grelhado, servido com legumes salteados e arroz integral.</p>
+          <div class="card-actions">
+            <span class="price">R$ 59,90</span>
+            <button class="btn small"
+              data-dish='{"name":"Salmão Grelhado","price":"R$ 59,90","desc":"Salmão fresco grelhado, servido com legumes salteados e arroz integral."}'>Ver</button>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Picanha na Brasa -->
+      <article class="card" data-category="carnes">
+        <img src="https://senhoracomidinha.com.br/loja/wp-content/uploads/2020/05/1580159623.jpg" alt="Picanha na Brasa">
+        <div class="card-body">
+          <h3>Picanha na Brasa</h3>
+          <p>Filé de picanha grelhado, acompanhado de legumes salteados.</p>
+          <div class="card-actions">
+            <span class="price">R$ 69,90</span>
+            <button class="btn small"
+              data-dish='{"name":"Picanha na Brasa","price":"R$ 69,90","desc":"Filé de picanha grelhado, acompanhado de legumes salteados."}'>Ver</button>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Costela Suína Barbecue -->
+      <article class="card" data-category="carnes">
+        <img src="https://msabores.com/wp-content/uploads/2025/01/Design-sem-nome.webp" alt="Costela Suína Barbecue">
+        <div class="card-body">
+          <h3>Costela Suína Barbecue</h3>
+          <p>Costela assada lentamente e finalizada com molho barbecue artesanal.</p>
+          <div class="card-actions">
+            <span class="price">R$ 54,90</span>
+            <button class="btn small"
+              data-dish='{"name":"Costela Suína Barbecue","price":"R$ 54,90","desc":"Costela assada lentamente e finalizada com molho barbecue artesanal."}'>Ver</button>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Filé Mignon ao Molho Madeira -->
+      <article class="card" data-category="carnes">
+        <img src="https://www.coisasdaleia.com.br/wp-content/uploads/2025/05/file-ao-molho-madeira.jpeg" alt="Filé Mignon ao Molho Madeira">
+        <div class="card-body">
+          <h3>Filé Mignon ao Molho Madeira</h3>
+          <p>Medalhões de mignon macios com molho madeira e champignons.</p>
+          <div class="card-actions">
+            <span class="price">R$ 62,00</span>
+            <button class="btn small"
+              data-dish='{"name":"Filé Mignon ao Molho Madeira","price":"R$ 62,00","desc":"Medalhões de mignon macios com molho madeira e champignons."}'>Ver</button>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Tilápia Crocante -->
+      <article class="card" data-category="peixe">
+        <img src="https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2019/04/16/tilapia-crocante.jpg" alt="Tilápia Crocante">
+        <div class="card-body">
+          <h3>Tilápia Crocante</h3>
+          <p>Tilápia empanada e crocante, servida com purê de batata e molho tártaro.</p>
+          <div class="card-actions">
+            <span class="price">R$ 46,90</span>
+            <button class="btn small"
+              data-dish='{"name":"Tilápia Crocante","price":"R$ 46,90","desc":"Tilápia empanada e crocante, servida com purê de batata e molho tártaro."}'>Ver</button>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Moqueca de Camarão -->
+      <article class="card" data-category="peixe">
+        <img src="https://canaldareceita.com.br/wp-content/uploads/2025/02/Moqueca-de-Camarao-1200x720.jpg" alt="Moqueca de Camarão">
+        <div class="card-body">
+          <h3>Moqueca de Camarão</h3>
+          <p>Receita tradicional com leite de coco, dendê e pimentões coloridos.</p>
+          <div class="card-actions">
+            <span class="price">R$ 72,00</span>
+            <button class="btn small"
+              data-dish='{"name":"Moqueca de Camarão","price":"R$ 72,00","desc":"Receita tradicional com leite de coco, dendê e pimentões coloridos."}'>Ver</button>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Salmão Grelhado com Ervas -->
+      <article class="card" data-category="peixe">
+        <img src="https://i0.statig.com.br/bancodeimagens/3u/3u/zn/3u3uznxqjwf20o3ztpeiblwn8.jpg" alt="Salmão Grelhado com Ervas">
+        <div class="card-body">
+          <h3>Salmão Grelhado com Ervas</h3>
+          <p>Filé de salmão ao toque de alecrim e limão, acompanhado de legumes salteados.</p>
+          <div class="card-actions">
+            <span class="price">R$ 58,00</span>
+            <button class="btn small"
+              data-dish='{"name":"Salmão Grelhado com Ervas","price":"R$ 58,00","desc":"Filé de salmão ao toque de alecrim e limão, acompanhado de legumes salteados."}'>Ver</button>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Frango à Parmegiana -->
+      <article class="card" data-category="caseiro">
+        <img src="https://fricassedefrango.com.br/wp-content/uploads/2025/07/como-fazer-frango-a-parmegiana-com-pure-de-batata.jpg"Frango à Parmegiana">
+        <div class="card-body">
+          <h3>Frango à Parmegiana</h3>
+          <p>Filé de frango empanado, coberto com molho de tomate fresco e queijo gratinado.</p>
+          <div class="card-actions">
+            <span class="price">R$ 39,90</span>
+            <button class="btn small"
+              data-dish='{"name":"Frango à Parmegiana","price":"R$ 39,90","desc":"Filé de frango empanado, coberto com molho de tomate fresco e queijo gratinado."}'>Ver</button>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Galinhada Mineira -->
+      <article class="card" data-category="caseiro">
+        <img src="https://cdn0.tudoreceitas.com/pt/posts/8/5/6/galinhada_mineira_11658_600_square.jpg" alt="Galinhada Mineira">
+        <div class="card-body">
+          <h3>Galinhada Mineira</h3>
+          <p>Arroz temperado com açafrão, pedaços de frango suculentos e cheiro verde.</p>
+          <div class="card-actions">
+            <span class="price">R$ 34,90</span>
+            <button class="btn small"
+              data-dish='{"name":"Galinhada Mineira","price":"R$ 34,90","desc":"Arroz temperado com açafrão, pedaços de frango suculentos e cheiro verde."}'>Ver</button>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Espetinho de Frango com Bacon -->
+      <article class="card" data-category="caseiro">
+        <img src="https://canalairfryer.com.br/wp-content/uploads/2023/05/Espeto-de-Frango-na-Airfryer.png" alt="Espetinho de Frango com Bacon">
+        <div class="card-body">
+          <h3>Espetinho de Frango com Bacon</h3>
+          <p>Cubos de frango intercalados com bacon, grelhados na brasa.</p>
+          <div class="card-actions">
+            <span class="price">R$ 27,90</span>
+            <button class="btn small"
+              data-dish='{"name":"Espetinho de Frango com Bacon","price":"R$ 27,90","desc":"Cubos de frango intercalados com bacon, grelhados na brasa."}'>Ver</button>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Pernil Assado com Molho da Casa -->
+      <article class="card" data-category="carnes">
+        <img src="https://claudia.abril.com.br/wp-content/uploads/2020/02/receita-pernil-com-molho-delicia.jpg" alt="Pernil Assado com Molho da Casa">
+        <div class="card-body">
+          <h3>Pernil Assado com Molho da Casa</h3>
+          <p>Acompanhado de arroz com cenoura, farofa de ovo e batatas coradas.</p>
+          <div class="card-actions">
+            <span class="price">R$ 45,90</span>
+            <button class="btn small"
+              data-dish='{"name":"Pernil Assado com Molho da Casa","price":"R$ 45,90","desc":"Acompanhado de arroz com cenoura, farofa de ovo e batatas coradas."}'>Ver</button>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Strogonoff de Frango -->
+      <article class="card" data-category="caseiro">
+        <img src="https://th.bing.com/th/id/R.468536d8b0692a7a9b4132b7df7c1647?rik=tSD4xgOMUlZTMw&pid=ImgRaw&r=0%22 alt="Strogonoff de Frango">
+        <div class="card-body">
+          <h3>Strogonoff de Frango</h3>
+          <p>Clássico brasileiro, servido com arroz branco e batata palha crocante.</p>
+          <div class="card-actions">
+            <span class="price">R$ 39,90</span>
+            <button class="btn small"
+              data-dish='{"name":"Strogonoff de Frango","price":"R$ 39,90","desc":"Clássico brasileiro, servido com arroz branco e batata palha crocante."}'>Ver</button>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Parmegiana de Frango -->
+      <article class="card" data-category="caseiro">
+        <img src="https://img.saborosos.com.br/imagens/file-de-frango-a-parmegiana.jpg" alt="Parmegiana de Frango">
+        <div class="card-body">
+          <h3>Parmegiana de Frango</h3>
+          <p>Peito de frango empanado, gratinado com queijo e molho de tomate, servido com arroz e fritas.</p>
+          <div class="card-actions">
+            <span class="price">R$ 44,90</span>
+            <button class="btn small"
+              data-dish='{"name":"Parmegiana de Frango","price":"R$ 44,90","desc":"Peito de frango empanado, gratinado com queijo e molho de tomate, servido com arroz e fritas."}'>Ver</button>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Bowl Fit com Frango Grelhado -->
+      <article class="card" data-category="caseiro">
+        <img src="https://painacozinha.com/wp-content/uploads/196.Frango-Grelhado-com-Salada-de-Quinoa-1024x683.jpg" alt="Bowl Fit com Frango Grelhado">
+        <div class="card-body">
+          <h3>Bowl Fit com Frango Grelhado</h3>
+          <p>Mix de folhas, quinoa, legumes assados e frango grelhado, servido no estilo bowl.</p>
+          <div class="card-actions">
+            <span class="price">R$ 42,90</span>
+            <button class="btn small"
+              data-dish='{"name":"Bowl Fit com Frango Grelhado","price":"R$ 42,90","desc":"Mix de folhas, quinoa, legumes assados e frango grelhado, servido no estilo bowl."}'>Ver</button>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Camarão ao Alho e Óleo -->
+      <article class="card" data-category="peixe">
+        <img src="https://anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-3405-859ac7760a22bb6c1ff28215b82ca362.jpg"Camarão ao Alho e Óleo">
+        <div class="card-body">
+          <h3>Camarão ao Alho e Óleo</h3>
+          <p>Camarões suculentos salteados no alho e azeite, acompanhados de arroz branco e legumes grelhados.</p>
+          <div class="card-actions">
+            <span class="price">R$ 62,90</span>
+            <button class="btn small"
+              data-dish='{"name":"Camarão ao Alho e Óleo","price":"R$ 62,90","desc":"Camarões suculentos salteados no alho e azeite, acompanhados de arroz branco e legumes grelhados."}'>Ver</button>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Camarão Empanado com Molho Tártaro -->
+      <article class="card" data-category="peixe">
+        <img src="https://img.cdndsgni.com/preview/10612717.jpg" alt="Camarão Empanado com Molho Tártaro">
+        <div class="card-body">
+          <h3>Camarão Empanado com Molho Tártaro</h3>
+          <p>Camarões crocantes empanados, servidos com molho tártaro caseiro e batatas rústicas.</p>
+          <div class="card-actions">
+            <span class="price">R$ 55,90</span>
+            <button class="btn small"
+              data-dish='{"name":"Camarão Empanado com Molho Tártaro","price":"R$ 55,90","desc":"Camarões crocantes empanados, servidos com molho tártaro caseiro e batatas rústicas."}'>Ver</button>
+          </div>
+        </div>
+      </article>
+ 
+    </div>
+  </section>
+ 
+ <!-- Sobremesas -->
+<section id="sobremesas" class="section container">
+  <div class="section-header">
+    <h2>Sobremesas</h2>
+    <p>Deliciosas sobremesas para finalizar sua refeição.</p>
+  </div>
+  <div class="cards-grid small">
+    <!-- Mantive todos os mini-cards -->
+    <article class="mini-card">
+      <img
+        src="https://receitatodahora.com.br/wp-content/uploads/2022/12/torta-de-limao-sem-gelatina-receita-toda-hora.jpg"
+        alt="Torta de Limão">
+      <div>
+        <h4>Torta de Limão</h4>
+        <p>R$ 12,00</p>
+           <button class="btn small"
+              data-dish='{"name":"Frango à Parmegiana","price":"R$ 39,90","desc":"Filé de frango empanado, coberto com molho de tomate fresco e queijo gratinado."}'>Ver</button>
+      </div>
+    </article>
+ 
+    <article class="mini-card">
+      <img
+        src="https://cdn0.umcomo.com.br/pt/posts/0/7/1/como_fazer_pave_de_chocolate_10170_600.jpg"
+        alt="Pavê de Chocolate">
+      <div>
+        <h4>Pavê de Chocolate</h4>
+        <p>R$ 25,00</p>
+      </div>
+    </article>
+ 
+    <article class="mini-card">
+      <img
+        src="https://www.coisasdojapao.com/wp-content/uploads/2019/05/bolo-morango-japones-fatia_opt.jpg"
+        alt="Bolo de Morango">
+      <div>
+        <h4>Bolo de Morango</h4>
+        <p>R$ 14,00</p>
+      </div>
+    </article>
+ 
+    <article class="mini-card">
+      <img
+        src="https://static.itdg.com.br/images/1200-630/426b90b0970289ca17d559796be1ff8d/sorvete-de-chocolate.jpg"
+        alt="Sorvete de Chocolate">
+      <div>
+        <h4>Sorvete de Chocolate</h4>
+        <p>R$ 18,00</p>
+      </div>
+    </article>
+ 
+    <article class="mini-card">
+      <img
+        src="https://teamodoce.com.br/wp-content/uploads/2025/03/Pudim-de-Leite-Condensado-com-Furinhos-Novo.webp"
+        alt="Pudim de Leite Condensado">
+      <div>
+        <h4>Pudim de Leite Condensado</h4>
+        <p>R$ 10,00</p>
+      </div>
+    </article>
+ 
+    <article class="mini-card">
+      <img
+        src="https://www.receitasmais.com.br/wp-content/uploads/2011/01/brigadeiro-1-1024x768.jpg"
+        alt="Brigadeiro">
+      <div>
+        <h4>Brigadeiro</h4>
+        <p>R$ 5,00</p>
+      </div>
+    </article>
+  </div>
+</section>
+ 
+  </main>
+ 
+  <script src="js/scriptcardapio.js"></script>
+ 
+</div>
+</body>
+</html>
