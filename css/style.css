@@ -679,11 +679,11 @@ a.cta:hover {
   margin-right: 2rem;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #555;
+  color: #b9b9b9;
 }
 
 #cozinheiros .cozinheiros-image img {
-  max-width: 40%;
+  max-width: 90%;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -781,4 +781,32 @@ a.cta:hover {
 .show-more:focus {
   outline: none; /* remove o contorno de foco */
   box-shadow: 0 0 5px rgba(212, 175, 55, 0.8); /* sombra dourada */
+}
+/* Estilo geral do botão */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background-color: #212121; /* cor de fundo escura */
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Efeito hover dourado */
+.btn:hover {
+  background-color: #d4af37; /* cor dourada */
+  border-color: #d4af37;
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.5); /* sombra dourada */
+  transform: scale(1.05); /* efeito de aumento ao passar o mouse */
+}
+
+/* Efeito de foco (opcional, quando o botão é clicado) */
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.7); /* sombra mais forte */
 }
