@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ChefMaster — Porções | Shopping Bandeiras, Campinas</title>
+  <title>ChefMaster — Porções |Campinas</title>
   <meta name="description" content="ChefMaster: porções deliciosas para compartilhar no Shopping Bandeiras, Campinas." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,14 +15,14 @@
   <!-- Header igual ao index -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#">ChefMaster <span class="brand-sub">Shopping Bandeiras — Campinas</span></a>
+      <a class="brand" href="#">ChefMaster <span class="brand-sub">Restaurante Gourmet — Campinas</span></a>
       <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
         <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navList">☰</button>
         <ul id="navList" class="nav-list">
           <li><a href="index.html">Início</a></li>
           <li><a href="cardapio.html">Cardápio</a></li>
           <li><a href="porcao.html" class="active">Porções</a></li>
-          <li><a href="bebidas.html">Bebidas</a></li>
+          <li><a href="sobremesas.html">Sobremesas</a></li>
           <li><a href="sobre.html">Sobre nós</a></li>
         </ul>
       </nav>
@@ -30,72 +30,85 @@
     </div>
   </header>
  
-  <!-- Lista de Porções em Cards -->
- <section class="menu-section">
+<section class="menu-section">
   <div class="container">
 <h2 style="color: var(--accent); 
            font-size: 60px; 
            text-align: center;">
   Nosso Cardápio de Porções
 </h2>
+
     <div class="cards-grid">
       <div class="card">
-        <img src="https://static.itdg.com.br/images/1200-675/150ba2d5d2874bed8561dd8edbdc1323/164773-original.jpg" alt="Batata Frita">
+        <img src="https://static.itdg.com.br/images/1200-675/150ba2d5d2874bed8561dd8edbdc1323/164773-original.jpg">
         <div class="card-body">
           <h3>Batata Frita</h3>
           <p>Crocante por fora e macia por dentro, ideal para compartilhar.</p>
           <span class="price">R$ 25,00</span>
+          <button class="btn ver-btn"
+            data-dish='{"name":"Batata Frita","price":"R$ 25,00","desc":"Crocante, dourada e perfeita para compartilhar."}'>Ver</button>
         </div>
       </div>
 
       <div class="card">
-        <img src="https://anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2600-e1e93ed120648f800ef27e4a709540c5.jpg" alt="Mandioca Frita">
+        <img src="https://anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2600-e1e93ed120648f800ef27e4a709540c5.jpg">
         <div class="card-body">
           <h3>Mandioca Frita</h3>
-          <p>Clássica, dourada e temperada com o toque especial da casa.</p>
+          <p>Clássica, dourada e temperada no ponto certo.</p>
           <span class="price">R$ 27,00</span>
+          <button class="btn ver-btn"
+            data-dish='{"name":"Mandioca Frita","price":"R$ 27,00","desc":"Douradinha, crocante e temperada com toque especial."}'>Ver</button>
         </div>
       </div>
 
       <div class="card">
-        <img src="https://espetinhodesucesso.com/wp-content/uploads/2022/04/Como-fritar-peixe-igual-da-praia.jpg" alt="Porção de Peixe">
+        <img src="https://espetinhodesucesso.com/wp-content/uploads/2022/04/Como-fritar-peixe-igual-da-praia.jpg">
         <div class="card-body">
           <h3>Porção de Peixe</h3>
-          <p>Peixe empanado crocante, acompanhado de molho tártaro especial.</p>
+          <p>Peixe empanado crocante com molho tártaro.</p>
           <span class="price">R$ 38,00</span>
+          <button class="btn ver-btn"
+            data-dish='{"name":"Porção de Peixe","price":"R$ 38,00","desc":"Peixe empanado crocante acompanhado de molho tártaro."}'>Ver</button>
         </div>
       </div>
 
       <div class="card">
-        <img src="https://www.estadao.com.br/resizer/v2/O24MTIEAZVGYLB4ZJTHUSGH6VA.jpg?quality=80&auth=3ecaff6a90acd76b6ccb23cd31b258543cde44b51258a0ba195222443660bda9&width=720&height=410&focal=1575,2743" alt="Frango a Passarinho">
+        <img src="https://receitadaboa.com.br/wp-content/uploads/2024/04/iStock-1307975717.jpg">
         <div class="card-body">
           <h3>Frango a Passarinho</h3>
-          <p>Dourado, suculento e temperado no ponto certo.</p>
+          <p>Suculento, dourado e bem temperado.</p>
           <span class="price">R$ 35,00</span>
+          <button class="btn ver-btn"
+            data-dish='{"name":"Frango a Passarinho","price":"R$ 35,00","desc":"Frango crocante, tempero especial e muito saboroso."}'>Ver</button>
         </div>
       </div>
 
       <div class="card">
-  <img src="https://sabores-new.s3.amazonaws.com/public/2025/01/COXINHA-scaled.jpg" alt="Coxinha de Frango">
-  <div class="card-body">
-    <h3>Coxinha de Frango</h3>
-    <p>Clássica e irresistível, com recheio cremoso de frango e massa sequinha.</p>
-    <span class="price">R$ 30,00</span>
-  </div>
-</div>
+        <img src="https://sabores-new.s3.amazonaws.com/public/2025/01/COXINHA-scaled.jpg">
+        <div class="card-body">
+          <h3>Coxinha de Frango</h3>
+          <p>Recheio cremoso de frango com massa sequinha.</p>
+          <span class="price">R$ 30,00</span>
+          <button class="btn ver-btn"
+            data-dish='{"name":"Coxinha de Frango","price":"R$ 30,00","desc":"Coxinhas sequinhas, recheadas com frango cremoso."}'>Ver</button>
+        </div>
+      </div>
 
-<div class="card">
-  <img src="https://anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-1682-52acab79d88efd805e6a341697e6aecb.jpg" alt="Calabresa Acebolada">
-  <div class="card-body">
-    <h3>Calabresa Acebolada</h3>
-    <p>Fatiada na medida, com cebolas caramelizadas e sabor marcante.</p>
-    <span class="price">R$ 32,00</span>
-  </div>
-</div>
+      <div class="card">
+        <img src="https://anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-1682-52acab79d88efd805e6a341697e6aecb.jpg">
+        <div class="card-body">
+          <h3>Calabresa Acebolada</h3>
+          <p>Fatias suculentas com cebola caramelizada.</p>
+          <span class="price">R$ 32,00</span>
+          <button class="btn ver-btn"
+            data-dish='{"name":"Calabresa Acebolada","price":"R$ 32,00","desc":"Calabresa fatiada com cebolas caramelizadas."}'>Ver</button>
+        </div>
+      </div>
 
     </div>
   </div>
 </section>
+
    <!-- Foto centralizada -->
   <div class="hero-image">
     <img src="img/CHEFMASTERdois.png" alt="Porções deliciosas" />
@@ -109,6 +122,20 @@
     </div>
   </footer>
  
-  <script src="js/script.js"></script>
+  <div id="modalPorcao" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <img id="modalImg" src="" alt="">
+    <h2 id="modalName"></h2>
+    <p><strong>Preço:</strong> <span id="modalPrice"></span></p>
+    <p id="modalDesc"></p>
+
+    <button id="orderBtn" class="btn pedir-btn">Pedir</button>
+  </div>
+</div>
+
+<script src="js/scriptporcao.js"></script>
+
 </body>
 </html>
